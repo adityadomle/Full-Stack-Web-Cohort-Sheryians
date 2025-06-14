@@ -41,9 +41,9 @@ main {
     }
 
     h1 {
-        width: 100%;
-        object-fit: cover;
-        border-radius: 1rem;
+        font-weight: 300;
+        font-size: 3.8rem;
+        width: 70%;
     }
 
     img {
@@ -53,6 +53,7 @@ main {
     }
 }
 
+
 .view-2 {
     margin: 2rem 0;
     display: flex;
@@ -61,6 +62,7 @@ main {
     width: 100%;
 
     .top {
+
         display: flex;
         flex-direction: column;
         gap: 2rem;
@@ -70,7 +72,7 @@ main {
         }
 
         h1 {
-            font-weight: 450;
+            font-weight: 400;
             font-size: 3rem;
             width: 90%;
         }
@@ -79,9 +81,90 @@ main {
             padding: 1rem;
             border: 0.7rem;
             width: fit-content;
-            border-radius: 0.5rem;
+            border-radius: 0.5em;
             background-color: black;
             color: rgb(255, 248, 214);
         }
     }
+
+    .line {
+        background-color: #000;
+        height: 1px;
+    }
+
+    .bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+
+        .elem {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+
+            svg {
+                width: 4rem;
+                aspect-ratio: 1 / 1;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+                font-weight: 400;
+            }
+
+            P {
+                @include light-weight-font;
+            }
+
+        }
+    }
+}
+
+
+@media (min-width:1020px) {
+
+
+    main {
+        padding: 3rem;
+    }
+
+    .view-1 {
+        h1 {
+            font-size: 8rem;
+            width: 100%;
+        }
+    }
+
+    .view-2 {
+        flex-direction: row;
+
+        .top {
+            width: 60%;
+            justify-content: space-between;
+
+            h1 {
+                font-size: 5rem;
+            }
+        }
+
+        .line {
+            height: initial;
+            width: 1px;
+        }
+
+        .bottom {
+            width: 40%;
+
+
+            .line {
+                height: 1px;
+                width: 100%;
+                align-self: stretch;
+            }
+        }
+
+    }
+
 }

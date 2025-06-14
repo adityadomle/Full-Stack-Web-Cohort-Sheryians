@@ -36,10 +36,9 @@ main {
   opacity: 0.8;
 }
 .view-1 h1 {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 1rem;
+  font-weight: 300;
+  font-size: 3.8rem;
+  width: 70%;
 }
 .view-1 img {
   width: 100%;
@@ -65,7 +64,7 @@ main {
   opacity: 0.8;
 }
 .view-2 .top h1 {
-  font-weight: 450;
+  font-weight: 400;
   font-size: 3rem;
   width: 90%;
 }
@@ -74,7 +73,65 @@ main {
   border: 0.7rem;
   width: -moz-fit-content;
   width: fit-content;
-  border-radius: 0.5rem;
+  border-radius: 0.5em;
   background-color: black;
   color: rgb(255, 248, 214);
+}
+.view-2 .line {
+  background-color: #000;
+  height: 1px;
+}
+.view-2 .bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.view-2 .bottom .elem {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.view-2 .bottom .elem svg {
+  width: 4rem;
+  aspect-ratio: 1/1;
+}
+.view-2 .bottom .elem h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+.view-2 .bottom .elem P {
+  font-weight: 200;
+  opacity: 0.8;
+}
+
+@media (min-width: 1020px) {
+  main {
+    padding: 3rem;
+  }
+  .view-1 h1 {
+    font-size: 8rem;
+    width: 100%;
+  }
+  .view-2 {
+    flex-direction: row;
+  }
+  .view-2 .top {
+    width: 60%;
+    justify-content: space-between;
+  }
+  .view-2 .top h1 {
+    font-size: 5rem;
+  }
+  .view-2 .line {
+    height: initial;
+    width: 1px;
+  }
+  .view-2 .bottom {
+    width: 40%;
+  }
+  .view-2 .bottom .line {
+    height: 1px;
+    width: 100%;
+    align-self: stretch;
+  }
 }
