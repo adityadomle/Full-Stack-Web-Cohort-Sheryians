@@ -41,3 +41,40 @@ main {
      object-fit: cover;
   border-radius: 1rem;
 }
+.view-1 img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1rem;
+}
+
+.view-2 {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}
+.view-2 .top {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.view-2 .top p {
+  font-weight: 200;
+  opacity: 0.8;
+}
+.view-2 .top h1 {
+  font-weight: 450;
+  font-size: 3rem;
+  width: 90%;
+}
+.view-2 .top button {
+  padding: 1rem;
+  border: 0.7rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 0.5rem;
+  background-color: black;
+  color: rgb(255, 248, 214);
+}

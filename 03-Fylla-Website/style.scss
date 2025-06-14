@@ -45,4 +45,43 @@ main {
         object-fit: cover;
         border-radius: 1rem;
     }
+
+    img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 1rem;
+    }
+}
+
+.view-2 {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+
+    .top {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        p {
+            @include light-weight-font;
+        }
+
+        h1 {
+            font-weight: 450;
+            font-size: 3rem;
+            width: 90%;
+        }
+
+        button {
+            padding: 1rem;
+            border: 0.7rem;
+            width: fit-content;
+            border-radius: 0.5rem;
+            background-color: black;
+            color: rgb(255, 248, 214);
+        }
+    }
 }
