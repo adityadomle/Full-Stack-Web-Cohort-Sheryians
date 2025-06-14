@@ -3,4 +3,4 @@ let age = prompt("Enter your age:");
 
 age = Number(age);
 
-// now lets check conditions
+// now lets check conditions 
