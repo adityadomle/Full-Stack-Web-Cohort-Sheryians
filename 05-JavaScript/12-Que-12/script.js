@@ -1,19 +1,11 @@
-let num1 = Number(prompt("Enter fist number:"));
-let num2 = Number(prompt("Enter second number:"));
-let operator = (prompt("Enter operator (+, -, *, /):"));
+let correctUsername = "admin";
+let correctPassword = "1234";
 
-let result;
+let enterdUsername = prompt("Enter your username:");
+let enterdPassword = prompt("Enter your password:");
 
-if (operator === "+") {
-    result = num1 + num2;
-} else if (operator === "-") {
-    result = num1 - num2;
-} else if (operator === "*") {
-    result = num1 * num2;
-} else if (operator === "/") {
-    result = num1 / num2;
+if (enterdUsername = correctUsername && enterdPassword) {
+    console.log("Login Succesful");
 } else {
-    console.log("Invalid operator");
+    console.log("Incorrect username or password");
 }
-
-console.log("Result is:" + result);

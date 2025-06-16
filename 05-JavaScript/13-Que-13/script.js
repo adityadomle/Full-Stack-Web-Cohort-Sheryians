@@ -1,19 +1,11 @@
-let num1 = Number(prompt("Enter fist number:"));
-let num2 = Number(prompt("Enter second number:"));
-let operator = (prompt("Enter operator (+, -, *, /):"));
+let a = Number(prompt("Enter first number (a):"));
+let b = Number(prompt("Enter first second number (b):"));
 
-let result;
+console.log("Before swapping: a=",a,"b =", b);
 
-if (operator === "+") {
-    result = num1 + num2;
-} else if (operator === "-") {
-    result = num1 - num2;
-} else if (operator === "*") {
-    result = num1 * num2;
-} else if (operator === "/") {
-    result = num1 / num2;
-} else {
-    console.log("Invalid operator");
-}
+//swaping logic
+a = a + b;
+b = a - b;
+a = a - b;
 
-console.log("Result is:" + result);
+console.log("After swapping: a=",a, "b =", b);

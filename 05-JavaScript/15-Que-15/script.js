@@ -1,19 +1,11 @@
-let num1 = Number(prompt("Enter fist number:"));
-let num2 = Number(prompt("Enter second number:"));
-let operator = (prompt("Enter operator (+, -, *, /):"));
+let num = Number(prompt("Enter a three-digit number:"));
 
-let result;
+let reverse = 0;
 
-if (operator === "+") {
-    result = num1 + num2;
-} else if (operator === "-") {
-    result = num1 - num2;
-} else if (operator === "*") {
-    result = num1 * num2;
-} else if (operator === "/") {
-    result = num1 / num2;
-} else {
-    console.log("Invalid operator");
+while (num > 0) {
+    let digit = num % 10;
+    reverse = reverse * 10 + digit;
+    num = Math.floor(num / 10);
 }
 
-console.log("Result is:" + result);
+console.log("Reverced number is:", reverse);

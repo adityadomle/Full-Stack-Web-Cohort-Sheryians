@@ -1,19 +1,17 @@
-let num1 = Number(prompt("Enter fist number:"));
-let num2 = Number(prompt("Enter second number:"));
-let operator = (prompt("Enter operator (+, -, *, /):"));
+let marks = prompt("Enter your marks (0-100):");
+marks = Number(marks);
 
-let result;
-
-if (operator === "+") {
-    result = num1 + num2;
-} else if (operator === "-") {
-    result = num1 - num2;
-} else if (operator === "*") {
-    result = num1 * num2;
-} else if (operator === "/") {
-    result = num1 / num2;
+if (marks >= 90 && marks <= 100) {
+    console.log("Grade: A");
+} else if (marks >= 80 && marks <= 100) {
+    console.log("Grade: B");
+} else if (marks >= 70 && marks <= 100) {
+    console.log("Grade: C");
+} else if (marks >= 60 && marks <= 100) {
+    console.log("Grade: D");
+} else if (marks >= 0 && marks <= 100) {
+    console.log("Grade: F");
 } else {
-    console.log("Invalid operator");
+    console.log("Invalid input! Please enter marks between 0 and 100 ");
 }
 
-console.log("Result is:" + result);

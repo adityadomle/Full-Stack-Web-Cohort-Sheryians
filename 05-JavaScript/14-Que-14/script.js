@@ -1,19 +1,11 @@
-let num1 = Number(prompt("Enter fist number:"));
-let num2 = Number(prompt("Enter second number:"));
-let operator = (prompt("Enter operator (+, -, *, /):"));
+let num = Number(prompt("Enter a number:"));
 
-let result;
-
-if (operator === "+") {
-    result = num1 + num2;
-} else if (operator === "-") {
-    result = num1 - num2;
-} else if (operator === "*") {
-    result = num1 * num2;
-} else if (operator === "/") {
-    result = num1 / num2;
+if (num % 3 === 0 && num % 5 === 0) {
+    console.log("FizzBuzz");
+} else if (num % 3 === 0) {
+    console.log("Fizz");
+} else if (num % 5 === 0) {
+    console.log("Buzz");
 } else {
-    console.log("Invalid operator");
+    console.log(num);
 }
-
-console.log("Result is:" + result);
