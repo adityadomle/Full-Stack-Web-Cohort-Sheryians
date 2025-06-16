@@ -1,11 +1,9 @@
-let num = Number(prompt("Enter a three-digit number:"));
+let word = prompt("Enter a word:");
 
-let reverse = 0;
+let reversed = word.split("").reverse().join("");
 
-while (num > 0) {
-    let digit = num % 10;
-    reverse = reverse * 10 + digit;
-    num = Math.floor(num / 10);
+if (word === reversed) {
+    console.log("Palindrome");
+} else {
+    console.log("Not a Palindrome");
 }
-
-console.log("Reverced number is:", reverse);
