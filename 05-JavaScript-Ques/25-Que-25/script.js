@@ -9,7 +9,7 @@ switch (num) {
         break;
     case 2:
         console.log("Two");
-        break;
+        break; 
     case 3: 
         console.log("Three");
         break; 
