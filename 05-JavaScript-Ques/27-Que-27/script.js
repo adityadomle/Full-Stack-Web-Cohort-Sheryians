@@ -5,4 +5,4 @@ function baarbarchalao(fn, time) {
 baarbarchalao(function(){
     console.log("Hello Aditya!");
     
-})
+}, 2)
