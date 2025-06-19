@@ -1,8 +1,8 @@
-function closurs(fn) {
-    setTimeout(fn, 3000);
+function clouser(fn) {
+    setTimeout(fn, 4000);
 }
 
-closurs(function(){
-    console.log("Ab hogya ye clouser");
+clouser(function(){
+    console.log("Hello, World!");
     
 })
