@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Vintage Download Bar</title>
+    <link href="https://cdn.tailwindcss.com" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#f4f1e5] flex items-center justify-center min-h-screen p-4">
+
+    <div class="bg-[#fff8e7] border border-[#c9bfa3] p-6 rounded-xl shadow-md w-full max-w-md text-center">
+        <h1 class="text-xl font-bold text-[#5a4e3c] mb-4">Song.mp3</h1>
+
+        <div class="w-full bg-[#e2d5c1] h-4 rounded-full overflow-hidden mb-2 border border-[#c2b59b]">
+            <div id="progress-bar" class="bg-[#96b38a] h-full w-0 transition-all duration-100 ease-linear"></div>
+        </div>
+
+        <div id="percentage" class="text-[#5a4e3c] text-sm font-semibold mb-2">0%</div>
+        <div id="status-label" class="text-[#7d715e] mb-4">Ready to download</div>
+
+        <button id="download-btn"
+            class="bg-[#b08d57] hover:bg-[#a27c43] text-white px-5 py-2 rounded-lg transition-colors duration-300">
+            Download
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
