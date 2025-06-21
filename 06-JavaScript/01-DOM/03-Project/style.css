@@ -1,0 +1,51 @@
+/* IPL Winner Guesser - Vibrant Theme */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #00F5D4, #00B8FF); /* Neon vibe */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: #0F0E0E; /* Dark base for contrast */
+  padding: 40px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  width: 320px;
+  transition: all 0.4s ease;
+}
+
+h1 {
+  color: #00F5D4;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #0072FF;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #005DD1;
+  transform: scale(1.05);
+}
+
+#result {
+  margin-top: 25px;
+  font-size: 20px;
+  color: #00F5D4;
+  font-weight: bold;
+}
