@@ -1,0 +1,66 @@
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #fff0f3; /* Soft pink background */
+  color: #361d32;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  background-color: #fff6f0; /* Light peach */
+  border: 3px solid #f67280; /* Soft pink border */
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 8px 8px 20px rgba(54, 29, 50, 0.2);
+  width: 90%;
+  max-width: 1000px;
+}
+
+h1 {
+  margin-bottom: 30px;
+  color: #6a0572; /* Deep pink-purple */
+  font-size: 2.5rem;
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  object-fit: cover;
+  border: 5px solid #c06c84; /* Muted red-pink border */
+  border-radius: 12px;
+  box-shadow: 4px 4px 12px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+button {
+  background-color: #355c7d; /* Muted green-blue */
+  color: #fff;
+  border: none;
+  padding: 16px 28px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #6c5b7b;
+  transform: scale(1.05);
+}
