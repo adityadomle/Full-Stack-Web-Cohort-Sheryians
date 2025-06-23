@@ -9,3 +9,4 @@ btn.addEventListener('click', function () {
   img1.setAttribute('src', img2Src);
   img2.setAttribute('src', img1Src);
 });
+  
