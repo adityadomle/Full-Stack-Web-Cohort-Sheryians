@@ -32,7 +32,7 @@ document.querySelectorAll("*").forEach((el) => {
   el.addEventListener("mouseleave", () => {
     cursor.classList.remove("hovering");
   });
-});
+}); 
 
 // Navbar hide/show on scroll
 let lastScroll = 0;
