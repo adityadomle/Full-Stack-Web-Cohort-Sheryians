@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff8e7;
+  font-family: "Courier New", Courier, monospace;
+  color: #4b3621;
+  cursor: none;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #deb887;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  z-index: 10;
+  transition: transform 0.3s ease;
+}
+
+.like-box {
+  width: 500px;
+  margin: 100px auto 0;
+  position: relative;
+  border: 5px solid #a67b5b;
+  background-color: #fff3dc;
+}
+
+.like-box img {
+  width: 100%;
+  display: block;
+}
+
+.heart {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  font-size: 4rem;
+  opacity: 0;
+  transition: all 0.5s ease;
+  pointer-events: none;
+}
+
+.heart.show {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.content {
+  padding: 2rem;
+  text-align: center;
+}
+
+.cursor {
+  width: 30px;
+  height: 30px;
+  border: 2px dashed #8b4513;
+  border-radius: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 1000;
+  transition: background-color 0.2s ease;
+}
+
+.cursor.hovering {
+  background-color: #f5deb3;
+}
