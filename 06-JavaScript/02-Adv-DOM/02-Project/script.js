@@ -35,7 +35,6 @@ document.querySelectorAll("*").forEach((el) => {
 }); 
 
 
-
 // Navbar hide/show on scroll
 let lastScroll = 0;
 const navbar = document.getElementById("navbar");
