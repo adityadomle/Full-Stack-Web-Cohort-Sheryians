@@ -1,0 +1,94 @@
+$primary: #2f80ed;
+$background: #f4f6f8;
+$white: #ffffff;
+$gray: #6c757d;
+$light-gray: #dee2e6;
+$shadow: rgba(0, 0, 0, 0.05);
+$card-radius: 12px;
+
+body {
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: $background;
+  margin: 0;
+  padding: 0;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 2rem;
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.user-card {
+  background: $white;
+  border-radius: $card-radius;
+  box-shadow: 0 4px 12px $shadow;
+  text-align: center;
+  padding: 1.8rem 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  animation: fadeIn 0.6s ease forwards;
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(47, 128, 237, 0.15);
+  }
+
+  .avatar {
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid $light-gray;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  .name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #212529;
+    margin: 0.4rem 0 0.2rem;
+  }
+
+  .title {
+    font-size: 0.95rem;
+    color: $gray;
+    margin-bottom: 1.2rem;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 0.5rem 1.2rem;
+    background: $primary;
+    color: white;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out;
+
+    &:hover {
+      background: darken($primary, 10%);
+    }
+  }
+}
+
+// Fade In Animation
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
