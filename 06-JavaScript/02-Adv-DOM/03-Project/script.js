@@ -17,7 +17,7 @@ function renderUsers(list) {
   container.innerHTML = '';
   list.forEach(user => {
     const card = document.createElement('div');
-    card.classList.add('user-card');
+    card.classList.add('user-card');  
     card.innerHTML = `
       <img class="avatar" src="${user.avatar}" alt="${user.name}" />
       <div class="name">${user.name}</div>
