@@ -15,11 +15,11 @@ const container = document.querySelector('.card-container');
 
 function renderUsers(list) {
   container.innerHTML = '';
-  list.forEach(user => {
+  list.forEach(user => { 
     const card = document.createElement('div');
     card.classList.add('user-card');
     card.innerHTML = `
-    
+
       <img class="avatar" src="${user.avatar}" alt="${user.name}" />
       <div class="name">${user.name}</div>
       <div class="title">${user.title}</div>
