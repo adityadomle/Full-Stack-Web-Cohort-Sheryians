@@ -20,7 +20,7 @@ function renderUsers(list) {
     card.classList.add('user-card');  
     card.innerHTML = `
       <img class="avatar" src="${user.avatar}" alt="${user.name}" />
-      <div class="name">${user.name}</div>
+      <div class="name">${user.name}</div>  
       <div class="title">${user.title}</div>
       <a href="#" class="btn">Message</a>
     `;
