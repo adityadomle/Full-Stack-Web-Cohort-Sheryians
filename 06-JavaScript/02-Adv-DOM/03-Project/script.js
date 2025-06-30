@@ -10,7 +10,7 @@ const users = [
   { id:9, name:"Ian Malcolm", title:"AI Researcher", avatar:"https://i.pravatar.cc/80?img=9" },
   { id:10, name:"Jasmine Lee", title:"Marketing Lead", avatar:"https://i.pravatar.cc/80?img=10" }
 ];
-
+  
 const container = document.querySelector('.card-container');
 
 function renderUsers(list) {
