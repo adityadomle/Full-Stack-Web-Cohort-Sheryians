@@ -19,6 +19,7 @@ function renderUsers(list) {
     const card = document.createElement('div');
     card.classList.add('user-card');
     card.innerHTML = `
+    
       <img class="avatar" src="${user.avatar}" alt="${user.name}" />
       <div class="name">${user.name}</div>
       <div class="title">${user.title}</div>
