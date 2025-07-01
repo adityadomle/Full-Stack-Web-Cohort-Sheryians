@@ -13,7 +13,7 @@ const users = [
   
 const container = document.querySelector('.card-container');
 
-function renderUsers(list) {  
+function renderUsers(list) {    
   container.innerHTML = '';
   list.forEach(user => {
     const card = document.createElement('div');  
