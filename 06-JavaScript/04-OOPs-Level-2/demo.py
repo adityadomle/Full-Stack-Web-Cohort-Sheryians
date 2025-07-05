@@ -130,7 +130,7 @@ def admin_menu():
             Product(name, price, stock).add_product()
         elif choice == "2":
             Store().view_products()
-        elif choice == "3":
+        elif choice == "3": 
             break
         else:
             print("❌ Invalid choice.")
