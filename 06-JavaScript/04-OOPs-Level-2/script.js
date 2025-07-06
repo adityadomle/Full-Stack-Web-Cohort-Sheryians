@@ -12,5 +12,5 @@ Employee.prototype.printDetails = function () {
 
 };
 
-let e1 = new Employee("Aditya", 20, 1234, 75000);
+let e1 = new Employee("Aditya", 20, 1234, 75000); 
 e1.printDetails(); 
